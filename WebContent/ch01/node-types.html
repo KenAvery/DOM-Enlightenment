@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Node Types</title>
+</head>
+<body>
+
+	<!-- this is a HTMLAnchorElement which inherits from... -->
+	<a href="#">Hi</a>
+
+	<script type="text/javascript">
+		// get reference to element node object
+		var nodeAnchor = document.querySelector('a');
+		// create props array to store property keys for element node object
+		var props = [];
+
+		// loop over element node object getting all properties and methods (inherited too)
+		for ( var key in nodeAnchor) {
+			props.push(key);
+		}
+		
+		// log alphebetically list of properties and methods
+		console.log(props.sort());
+	</script>
+</body>
+</html>
