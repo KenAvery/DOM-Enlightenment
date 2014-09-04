@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Traverse DOM Elements</title>
+</head>
+<body>
+	<ul><!-- comment -->
+		<li id="A"></li>
+		<li id="B"></li>
+		<!-- comment -->
+	</ul>
+
+	<script>
+		// cache selection of the ul 
+		var ul = document.querySelector('ul');
+
+		console.log("What is the first element child of the ul?");
+		console.log(ul.firstElementChild.nodeName); // logs li 
+
+		console.log("What is the last element child of the ul?");
+		console.log(ul.lastElementChild.nodeName); // logs li
+
+		console.log("What is the nextSibling of the frist li?");
+		console.log(ul.querySelector('#A').nextElementSibling.nodeName); // logs li
+
+		console.log("What is the previousSibling of the last li?");
+		console.log(ul.querySelector('#B').previousElementSibling.nodeName); // logs li
+		
+		console.log("What are the element only child nodes of the ul?");
+		console.log(ul.children); // HTMLCollection, all child nodes including text nodes 
+		
+		console.log("What is the parent element of the first li?"); 
+		console.log( ul.firstElementChild.parentElement); // logs ul
+
+	</script>
+</body>
+</html>

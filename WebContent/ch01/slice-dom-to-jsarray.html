@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Use Slice to Convert HTML Collection and NodeList to JS
+	Array</title>
+</head>
+<body>
+
+	<a href="#"></a>
+
+	<script>
+		// returns true 
+		console.log("Is sliced HTML Collection a JS Array? "
+				+ Array.isArray(Array.prototype.slice.call(document.links)));
+
+		// returns true
+		console.log("Is sliced NodeList a JS Array? "
+				+ Array.isArray(Array.prototype.slice.call(document
+						.querySelectorAll('a'))));
+	</script>
+</body>
+</html>

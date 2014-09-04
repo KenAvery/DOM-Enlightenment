@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Clone Node and Children</title>
+</head>
+<body>
+
+    <ul>
+        <li>Hi</li>
+        <li>there</li>
+    </ul>
+
+    <script>
+        var cloneUL = document.querySelector('ul').cloneNode(true);
+
+        console.log(cloneUL.constructor); // logs HTMLUListElement() 
+        console.log(cloneUL.innerHTML); // logs (an empty string) as only the ul was cloned
+    </script>
+</body>
+</html>

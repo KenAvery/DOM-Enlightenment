@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Remove Child Node</title>
+</head>
+<body>
+
+	<div id="A">Hi</div>
+	<div id="B">Dude</div>
+
+	<script>
+		// remove node divA 
+		var divA = document.getElementById('A');
+		divA.parentNode.removeChild(divA);
+
+		// remove node divB
+		var divB = document.getElementById('B').firstChild;
+		divB.parentNode.removeChild(divB);
+
+		// log the new DOM updates
+		console.log(document.body.innerHTML);
+	</script>
+</body>
+</html>

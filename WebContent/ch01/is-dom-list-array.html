@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Is Node List or HTML Collection an Array</title>
+</head>
+<body>
+
+	<a href="#"></a>
+
+	<script>
+		/* returns false, it's an HTMLCollection not an Array */
+		console.log("Is HTMLCollection a JS Array? " + Array.isArray(document.links));
+
+		/* returns false, it's a NodeList not an Array */
+		console.log("Is NodeList a JS Array? " + Array.isArray(document.querySelectorAll('a')));
+	</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Is Node Equal</title>
+</head>
+<body>
+
+<input type="text">
+<input type="text">
+
+<textarea>foo</textarea> 
+<textarea>bar</textarea> 
+
+<script> 
+
+// logs true, because they are exactly identical 
+var input = document.querySelectorAll('input');
+console.log("Is " + input[0] + "=" + input[1] + "?"); 
+console.log(input[0].isEqualNode(input[1])); 
+
+// logs false, because the child text node is not the same 
+var textarea = document.querySelectorAll('textarea');
+console.log("Is " + textarea[0] + "=" + textarea[1] + "?");
+console.log(textarea[0].isEqualNode(textarea[1])); 
+
+</script>
+</body>
+</html>

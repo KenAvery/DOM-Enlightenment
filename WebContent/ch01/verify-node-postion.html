@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="ISO-8859-1">
+<title>Verify Node Position in DOM Tree</title>
+</head>
+<body>
+
+	<script>
+		// is <body> inside <html lang="en"> ? 
+		var inside = document.querySelector('html').contains(
+				document.querySelector('body'));
+
+		console.log("Is <body> inside <html>? " + inside); // logs true
+	</script>
+</body>
+</html>
