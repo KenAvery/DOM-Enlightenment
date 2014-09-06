@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Examine DOM</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// document own properties
+		console.log(Object.keys(document).sort());
+
+		// document own properties and inherited properties
+		var documentPropertiesIncludeInherited = [];
+		for ( var p in document) {
+			documentPropertiesIncludeInherited.push(p);
+		}
+		console.log(documentPropertiesIncludeInherited.sort());
+
+		//document inherited properties only
+		var documentPropertiesOnlyInherited = [];
+		for ( var p in document) {
+			if (!document.hasOwnProperty(p)) {
+				documentPropertiesOnlyInherited.push(p);
+			}
+		}
+		console.log(documentPropertiesOnlyInherited.sort());
+	</script>
+</body>
+</html>

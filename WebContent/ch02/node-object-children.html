@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Node Object Children</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		// This is the doctype/DTD
+		console.log(document.childNodes[0].nodeType); // logs 10, DOCUMENT_TYPE_NODE
+		console.log(document.childNodes[0].nodeName);
+
+		// This is the <html> element
+		console.log(document.childNodes[1].nodeType); // logs 1, ELEMENT_TYPE_NODE
+		console.log(document.childNodes[1].nodeName);
+	</script>
+</body>
+</html>

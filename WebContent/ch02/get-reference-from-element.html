@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Get Document Reference from Element</title>
+</head>
+<body>
+	<!-- Note: this example is not working! -->
+	<iframe src="http://someFileServedFromServerOnSameDomain.html"></iframe>
+
+	<script type="text/javascript">
+		// get the window.document that the <body> is contained within
+		console.log(document.body.ownerElement);
+
+		// get the window.document the <body> inside of the iframe is contained within
+		console.log(window.frames[0].document.body.ownerElement);
+	</script>
+</body>
+</html>

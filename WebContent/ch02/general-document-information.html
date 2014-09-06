@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>General Document Information</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var d = document;
+		console.log('title = ' + d.title);
+		console.log('url = ' + d.URL);
+		console.log('referrer = ' + d.referrer);
+		console.log('lastModified = ' + d.lastModified);
+
+		// logs either BackCompt (Quirks Mode) or CSS1Compat (Strict Mode)
+		console.log('compatibility mode = ' + d.compatMode);
+	</script>
+</body>
+</html>
