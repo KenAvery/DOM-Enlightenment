@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>HTML Element Node Properties and Methods</title>
+</head>
+<body>
+
+	<a href="#">Hi</a>
+
+	<script type="text/javascript">
+		var anchor = document.querySelector('a');
+
+		// element own properties
+		console.log('Properites Element Anchor:');
+		console.log(Object.keys(anchor).sort());
+
+		// element own properties and inherited properties
+		var documentPropertiesIncudeInherited = [];
+		for ( var p in document) {
+			documentPropertiesIncudeInherited.push();
+		}
+		console.log('Properites Include Inherited:');
+		console.log(documentPropertiesIncudeInherited.sort());
+
+		// element inherited properties only
+		var documentPropertiesOnlyInherited = [];
+		for ( var p in document) {
+			if (!document.hasOwnProperty(p)) {
+				documentPropertiesOnlyInherited.push();
+			}
+		}
+		console.log('Properites Only Inherited:');
+		console.log(documentPropertiesOnlyInherited.sort());
+	</script>
+</body>
+</html>
